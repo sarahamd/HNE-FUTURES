@@ -4,7 +4,7 @@ import Card from "@mui/material/Card";
 import Grid from "@mui/material/Grid";
 import { useTheme } from "@mui/material/styles";
 import Typography from "@mui/material/Typography";
-import { CiBarcode } from "react-icons/ci";
+// import { CiBarcode } from "react-icons/ci";
 import { FaRoute ,FaRegListAlt } from "react-icons/fa";
 import { TbMapPin } from "react-icons/tb";
 
@@ -193,7 +193,7 @@ const Features = () => {
               title: "QR Code Scanning",
               subtitle:
                 "Scan the QR codes available at charging stations to start charging instantly. This makes the process fast, secure, and easy.",
-              icon: <CiBarcode size={24}/>
+              // icon: <CiBarcode size={24}/>
 
             },
           ].map((item, i) => (
