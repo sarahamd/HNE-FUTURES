@@ -1,0 +1,13 @@
+# *
+User-agent: *
+Disallow: /api
+
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://hnefutures.com
+
+# Sitemaps
+Sitemap: https://hnefutures.com/sitemap.xml
