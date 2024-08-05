@@ -1,0 +1,11 @@
+{
+  "applinks": {
+      "apps": [],
+      "details": [
+          {
+              "appID": "88YABJ2B96.app.hnefutures.com",
+              "paths": [ "*" ]
+          }
+      ]
+  }
+}

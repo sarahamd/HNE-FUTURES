@@ -1,0 +1,13 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "app.hnefutures.com",
+      "sha256_cert_fingerprints": [
+        "D0:81:17:93:DE:EB:34:1D:EA:D3:D1:C5:D4:63:7F:CD:7B:76:23:5E:BC:A8:9E:1A:2B:64:6B:D3:DA:10:9E:1B",
+        "3C:3D:4E:D1:A0:1B:E9:92:46:F7:F2:A7:26:80:9E:F2:38:AC:98:92:31:B8:D8:8C:4A:5A:53:11:1A:07:9E:F6"
+      ]
+    }
+  }
+]

@@ -1,0 +1,58 @@
+import React from "react";
+import { useTheme } from "@mui/material/styles";
+import Box from "@mui/material/Box";
+import Typography from "@mui/material/Typography";
+import Card from "@mui/material/Card";
+import { default as NextLink } from "next/link";
+import Button from "@mui/material/Button";
+
+const ContactCard = () => {
+  const theme = useTheme();
+
+  return (
+    <Box
+      component={Card}
+      boxShadow={0}
+      border={{
+        xs: 0,
+        md: `1px solid ${theme.palette.divider}`,
+      }}
+    >
+      <Box
+        paddingX={{ xs: 0, md: 3 }}
+        paddingTop={3}
+        paddingBottom={{ xs: 0, md: 3 }}
+      >
+        <Typography
+          sx={{
+            fontWeight: "700",
+          }}
+          gutterBottom
+        >
+          Any questions?
+        </Typography>
+        <Typography
+          variant={"body2"}
+          color={"textSecondary"}
+          sx={{
+            marginBottom: 2,
+          }}
+        >
+          If you have any questions or concerns about the privacy policy please
+          contact us.
+        </Typography>
+        <Button
+          variant="outlined"
+          color="primary"
+          component={NextLink}
+          href="/contact"
+          size="large"
+        >
+          Contact
+        </Button>
+      </Box>
+    </Box>
+  );
+};
+
+export default ContactCard;
