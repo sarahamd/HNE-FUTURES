@@ -4,9 +4,11 @@ import Card from "@mui/material/Card";
 import Grid from "@mui/material/Grid";
 import { useTheme } from "@mui/material/styles";
 import Typography from "@mui/material/Typography";
-// import { CiBarcode } from "react-icons/ci";
-import { FaRoute ,FaRegListAlt } from "react-icons/fa";
+import { CiBarcode } from "react-icons/ci";
+import {FaRegListAlt } from "react-icons/fa";
+import { MdOutlineManageHistory } from "react-icons/md";
 import { TbMapPin } from "react-icons/tb";
+import { RiCalendarScheduleFill } from "react-icons/ri";
 
 const Features = () => {
   const theme = useTheme();
@@ -175,25 +177,30 @@ const Features = () => {
               icon:<TbMapPin size={24} />
 
             },
+           
             {
-              title: "Route Configuration",
-              subtitle:
-                "Configure your routing on the application map by choosing your starting point and destination. View charger details and filter stations by various criteria.",
-              icon: <FaRoute size={24} />
-
-            },
-            {
-              title: "Vehicle Information",
+              title: "your Vehicle Information",
               subtitle:
                 "Add your vehicle information for safe charging on both your vehicle and the charger.",
               icon: <FaRegListAlt size={24}/>
 
+            },{
+              title: "Scheduling Start And End Charge",
+              subtitle: "Set A Specific Start Time For Charging And Define The End Time Or Session Duration Based On The Distance To Be Covered. This Feature Ensures Your Vehicle Is Ready When You Need It.",
+              icon:  <RiCalendarScheduleFill size={24}/>
+             
+
+            },
+            {
+              title: 'Dynamic Load Management (DLM)',
+              subtitle: 'Optimise Energy Distribution In A Simultaneous EV AC Or DC Charging Infrastructure Avoiding Grid Overload Issues, Minimising Operational Costs',
+              icon: <MdOutlineManageHistory size={25} />
             },
             {
               title: "QR Code Scanning",
               subtitle:
                 "Scan the QR codes available at charging stations to start charging instantly. This makes the process fast, secure, and easy.",
-              // icon: <CiBarcode size={24}/>
+              icon: <CiBarcode size={24}/>
 
             },
           ].map((item, i) => (

@@ -81,6 +81,7 @@ const Hero = () => {
                 Get the Charging App
               </Button>
             </Box>
+            
           </Box>
         </Box>
       </Grid>

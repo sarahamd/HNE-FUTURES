@@ -11,14 +11,14 @@ export const PAGE_PROPS = {
     description:
       "HNE Futures mobile applications allow users to find electric charging stations in Egypt and provides remote charging control",
     keywords:
-      "Electric Cars, Electric Vehicles, EV, Charging App, Remote Charging, Smart Charging",
+      "Electric Cars, Electric Vehicles, EV, Charging App, Remote Charging, Smart Charging,Nearby Stations,Vehicle Information,QR Code Scanning",
   },
   Dashboard: {
     title: "Comprehensive Dashboard for EV Charging Management | HNE Futures",
     description:
       "The HNE Futures Dashboard allows Admins to add chargers, view all chargers and sessions, track revenue, and manage tariffs. Monitor and manage your entire EV charging infrastructure with advanced features and remote control capabilities.",
       keywords:
-      "EV Charging, Electric Vehicles, Charging Stations, Charging Management, Revenue Tracking, Tariff Management, Remote Charging Control",
+      "EV Charging, Electric Vehicles, Charging Stations, Charging Management, Revenue Tracking, Tariff Management, Remote Charging Control,Dynamic load managment",
   },
   
   chargers: {

@@ -64,18 +64,7 @@ const ChargerComparison = () => {
               {
                 title: "White & Black",
               },
-              {
-                title: "Offline/Online Mode",
-              },
-              {
-                title: "Authentication (optional)",
-              },
-              {
-                title: "Location Charger",
-              },
-              {
-                title: "Update Remotly",
-              },
+             
              
             ],
             specificationsLink: "/specs/TechSpec-ModelX.pdf",
@@ -107,7 +96,7 @@ const ChargerComparison = () => {
             specificationsLink: "/specs/TechSpec-ModelY.pdf",
           },
           {
-            title: "Model X",
+            title: "Model X 2",
             picture: modelXPicture,
             price: "12500",
             features: [
@@ -126,25 +115,38 @@ const ChargerComparison = () => {
               {
                 title: "White & Black",
               },
+              {
+                title: "4G Module",
+              },
+              {
+                title: "EML Lock",
+              },
+              {
+                title: "Smart Charging",
+              },
+              {
+                title: "AC Charger",
+              },
             ],
             specificationsLink: "/specs/TechSpec-ModelX.pdf",
           },
           {
-            title: "Model Y",
+            title: "Model Y 2",
             picture: modelYPicture,
             price: "13500",
             features: [
               {
-                title: "Wall Mounted",
+                title: "Portable Charger",
               },
-              {
-                title: "Easy Installation",
-              },
+              
               {
                 title: "Status Screen",
               },
               {
-                title: "WiFi / RFID",
+                title: "Smart Charging",
+              },
+              {
+                title: "AC Charger",
               },
               {
                 title: "White & Black",

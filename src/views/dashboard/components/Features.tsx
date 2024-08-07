@@ -11,7 +11,7 @@ import { TabContext, TabList, TabPanel } from '@mui/lab';
 const DashboardFeatures = () => {
   const theme = useTheme();
   const [value, setValue] = React.useState('1');
-const features = [
+const Allfeatures = [
     {
       title: 'Total Chargers',
       subtitle: 'View The Total Number Of Chargers In Your Network',
@@ -119,6 +119,20 @@ const features = [
     icon: <TbChartBar size={25} />
   },]
 
+  const statistics=[  {
+    title: 'Total Energy',
+    subtitle: 'View The Total Energy Consumption',
+    icon: <SlEnergy size={25} />
+  },  {
+    title: 'Advanced Tariff System',
+    subtitle: 'Upload All Kinds Of Tariffs Without Additional Programming',
+    icon: <TbCoinPound size={25} />
+  },
+  {
+    title: 'User Groups And Users',
+    subtitle: 'Admins Can Manage Users And Groups.',
+    icon: <TbUsers size={25} />
+  }]
   const other=[  {
     title: 'Total Energy',
     subtitle: 'View The Total Energy Consumption',
@@ -168,17 +182,19 @@ const features = [
         <TabContext value={value}>
           <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
             <TabList onChange={handleChange} aria-label="lab API tabs example" centered>
-              <Tab label="ALL" value="1" />
-              <Tab label="CHARGER" value="2" />
-              <Tab label="SESSION" value="3" />
-              <Tab label="REVENUE" value="4" />
-              <Tab label="OTHER" value="5" />
+              <Tab label="ALL" value="1" />  
+                <Tab label="STATISTICS" value="2" />
+              <Tab label="CHARGER" value="3" />
+              <Tab label="SESSION" value="4" />
+              <Tab label="REVENUE" value="5" />
+          
+              <Tab label="OTHER" value="6" />
             </TabList>
           </Box>
           <Box p={3}>
             <TabPanel value="1">
               <Grid container spacing={2}>
-                {features.map((item, i) => (
+                {Allfeatures.map((item, i) => (
                   <Grid item xs={12} sm={6} md={4} key={i}>
                     <Card
                       sx={{
@@ -211,8 +227,44 @@ const features = [
                   </Grid>
                 ))}
               </Grid>
-            </TabPanel>
-            <TabPanel value="2">
+            </TabPanel> 
+            <TabPanel value="2"> 
+               <Grid container spacing={2}>
+                {statistics.map((item, i) => (
+                  <Grid item xs={12} sm={6} md={4} key={i}>
+                    <Card
+                      sx={{
+                        padding: 4,
+                        borderRadius: 4,
+                        width: '100%',
+                        height: '100%',
+                      }}
+                    >
+                      <Box display={'flex'} flexDirection={'column'} height={'100%'}>
+                        <Avatar
+                          sx={{
+                            width: 53,
+                            height: 53,
+                            marginBottom: 2,
+                            bgcolor: theme.palette.primary.main,
+                            color: theme.palette.background.paper,
+                          }}
+                        >
+                          {item.icon}
+                        </Avatar>
+                        <Typography variant={'h6'} gutterBottom sx={{ fontWeight: 500 }}>
+                          {item.title}
+                        </Typography>
+                        <Typography color="text.secondary">
+                          {item.subtitle}
+                        </Typography>
+                      </Box>
+                    </Card>
+                  </Grid>
+                ))}
+              </Grid>
+              </TabPanel>
+            <TabPanel value="3">
               <Grid container spacing={2}>
                 {charger.map((item, i) => (
                   <Grid item xs={12} sm={6} md={4} key={i}>
@@ -249,7 +301,7 @@ const features = [
               </Grid>
               </TabPanel>
 
-            <TabPanel value="3">
+            <TabPanel value="4">
             <Grid container spacing={2}>
                 {session.map((item, i) => (
                   <Grid item xs={12} sm={6} md={4} key={i}>
@@ -285,7 +337,8 @@ const features = [
                 ))}
               </Grid>
                 </TabPanel>
-            <TabPanel value="4">  <Grid container spacing={2}>
+            <TabPanel value="5">  
+              <Grid container spacing={2}>
                 {Revenue.map((item, i) => (
                   <Grid item xs={12} sm={6} md={4} key={i}>
                     <Card
@@ -318,8 +371,11 @@ const features = [
                     </Card>
                   </Grid>
                 ))}
-              </Grid></TabPanel>
-            <TabPanel value="5">  <Grid container spacing={2}>
+              </Grid>
+              </TabPanel>
+           
+            <TabPanel value="6"> 
+               <Grid container spacing={2}>
                 {other.map((item, i) => (
                   <Grid item xs={12} sm={6} md={4} key={i}>
                     <Card
@@ -352,7 +408,8 @@ const features = [
                     </Card>
                   </Grid>
                 ))}
-              </Grid></TabPanel>
+              </Grid>
+              </TabPanel>
           </Box>
         </TabContext>
       </Box>

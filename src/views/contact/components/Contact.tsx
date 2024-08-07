@@ -82,8 +82,8 @@ const Contact = () => {
                 <BusinessIcon />
               </ListItemIcon>
               <ListItemText
-                primary="5 El-Fadl, Bab Al Louq"
-                secondary="Abdeen, Cairo Governorate 11513"
+                primary="Fabrihub 690"
+                secondary=" New Cairo 3, Cairo Governorate 4716011"
               />
             </ListItem>
             <ListItem disablePadding>
