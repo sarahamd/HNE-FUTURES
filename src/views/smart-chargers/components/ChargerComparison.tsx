@@ -16,6 +16,7 @@ import Typography from "@mui/material/Typography";
 import Link from "next/link";
 import modelXPicture from "public/chargers/model-x.webp";
 import modelYPicture from "public/chargers/model-y.webp";
+import modelnewYPicture from "public/chargers/new Model-Y.webp"
 
 const ChargerComparison = () => {
   const theme = useTheme();
@@ -110,16 +111,19 @@ const ChargerComparison = () => {
                 title: "Status Screen",
               },
               {
-                title: "WiFi / RFID",
+                title: "WiFi / 4G",
               },
               {
                 title: "White & Black",
               },
               {
-                title: "4G Module",
+                title: "RFID Authentication",
               },
               {
-                title: "EML Lock",
+                title: "EML Lock (optional)",
+              },
+              {
+                title: "App Usage",
               },
               {
                 title: "Smart Charging",
@@ -132,7 +136,7 @@ const ChargerComparison = () => {
           },
           {
             title: "Model Y 2",
-            picture: modelYPicture,
+            picture: modelnewYPicture,
             price: "13500",
             features: [
               {
@@ -142,17 +146,27 @@ const ChargerComparison = () => {
               {
                 title: "Status Screen",
               },
+             
+              {
+                title: "White & Black",
+              },
+              {
+                title: "Wifi",
+              },
+              {
+                title: "Meter Values",
+              },
+              {
+                title: "Tethered Cable",
+              },
+              {
+                title: "App Usage",
+              },
               {
                 title: "Smart Charging",
               },
               {
                 title: "AC Charger",
-              },
-              {
-                title: "White & Black",
-              },
-              {
-                title: "Tethered Cable",
               },
             ],
             specificationsLink: "/specs/TechSpec-ModelY.pdf",
@@ -204,6 +218,7 @@ const ChargerComparison = () => {
                         width={"auto"}
                         padding={0}
                       >
+                        
                         <Box
                           component={ListItemAvatar}
                           minWidth={"auto !important"}
